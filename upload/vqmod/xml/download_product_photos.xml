@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Download Product Photos</id>
+	<version>1.0</version>
+	<vqmver>2.4.X</vqmver>
+	<author>Josan Iracheta</author>
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation info="Insert script tag into product page" error="log">
+			<search position="bottom"><![CDATA[
+				<!--vqmod xml data goes here-->
+			]]></search>
+			<add><![CDATA[
+				<script src="catalog/view/javascript/downloadProductPhotos.js"></script>
+			]]></add>
+		</operation>
+	</file>
+</modification>
