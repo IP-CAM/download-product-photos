@@ -31,7 +31,7 @@
 						</select>
 					</td>
 					<td>
-						<p>Write a short description of the module</p>
+						<p>This module will allow your users to download product photos on the product page.</p>
 					</td>
 				</tr>
 			</tbody>
