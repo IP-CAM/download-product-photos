@@ -120,7 +120,8 @@ function downloadProductPhotos(){
 	//hide button for debugging
 	//clone.style.display = 'none';
 	//insert clone into page
-	targetToClone.insertAdjacentElement('afterend',clone);
+	//targetToClone.insertAdjacentElement('afterend',clone);
+	targetToClone.parentNode.insertBefore(clone,targetToClone.nextSibling);
 
 	//get product options on page load
 
@@ -187,7 +188,8 @@ function downloadProductPhotos(){
 					link.style.color = '#2980b9';
 					link.setAttribute('target','_blank');
 					link.textContent = 'Download Link';
-					document.querySelector('#dpp-download-btn').insertAdjacentElement('beforebegin',link);
+					//document.querySelector('#dpp-download-btn').insertAdjacentElement('beforebegin',link);
+					document.querySelector('#dpp-download-btn').parentNode.insertBefore(link,document.querySelector('#dpp-download-btn'));
 				}
 				else{
 					document.querySelector('#dpp-download-link').href = window.location.origin + '/download-product-photos/?file_name=' + data;
